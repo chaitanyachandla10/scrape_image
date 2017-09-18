@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.1",
+  "description": "scrape image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanyachandla10/scrape_image.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanyachandla10/scrape_image/issues"
+  },
+  "homepage": "https://github.com/chaitanyachandla10/scrape_image#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "file-extension": "^3.1.2",
+    "image-downloader": "^3.2.2",
+    "image-scraper": "^0.2.0",
+    "images-scraper": "^2.0.11",
+    "mongodb": "^2.2.31",
+    "node-array": "0.0.7",
+    "nodemon": "^1.12.1",
+    "request": "^2.81.0",
+    "request-progress": "^3.0.0"
+  }
+}

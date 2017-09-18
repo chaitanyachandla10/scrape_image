@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/index.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+ integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+ crossorigin="anonymous"></script>
+
+</head>
+<body ng-app="myapp">
+<div class="container">
+	<div class="row">
+        <div class="col-md-12" ng-controller="ctr" id="div1">
+    		<h1 align="center">Welcome</h1><br><br>          
+                    <input type="text" class="col-md-6" placeholder="Search here" ng-model="search">
+                    <button type="button" class="btn btn-success col-md-3" ng-click="submit()">Submit</button>
+                    {{2+2}}
+        </div><br><br>
+
+        <div ng-controller="search_keywords" class="col-md-12" id="div2" >
+        <button type="button" class="btn btn-info" align="center">Searched Keyword</button>
+
+        </div>
+	</div>
+</div>
+</body>
+<SCRIPT TYPE="text/javascript" src="./bower_components/angular/angular.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" src="./controller/index.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" src="./controller/search.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" src="./controller/search_keywords.js"></SCRIPT>
+<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+</html>
