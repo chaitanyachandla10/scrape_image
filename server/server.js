@@ -20,7 +20,7 @@ myapp.get('/search',function(req,res)
 
     var Scraper = require ('images-scraper'),
   google = new Scraper.Google();
-    name=req.query;
+    name=JSON.stringify(req.query);
     google.list({
     keyword:name,
     num: 5,
